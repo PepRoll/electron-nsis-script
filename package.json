@@ -1,0 +1,24 @@
+{
+    "name": "electron-nsis-script",
+    "version": "0.0.1",
+    "description": "Application for demonstrating the capabilities of the nsis installer",
+    "author": "PepRoll",
+    "main": "main.js",
+    "repository": {
+      "type": "git",
+      "url": "git@github.com:PepRoll/electron-nsis-script.git"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "electron": "latest",
+        "electron-builder": "latest"
+    },
+    "build": {
+        "win": {
+            "target": "nsis"
+        },
+        "nsis": {
+            "perMachine": "true"
+        }
+    }
+}
